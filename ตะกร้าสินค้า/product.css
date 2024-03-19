@@ -1,0 +1,198 @@
+.banner_taital {
+    width: 100%;
+    font-size: 60px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product img {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: block; /* Changed from flex to block */
+    width: 200px; /* ปรับขนาดความกว้างของรูป */
+    height: 200px; /* ปรับขนาดความสูงของรูป */
+}
+.pro img {
+    width: 10px; /* ปรับขนาดความกว้างของรูป */
+    height: 10px; /* ปรับขนาดความสูงของรูป */
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart {
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.first-color {
+    background: #e0ffcd;
+}
+
+.second-color {
+    background: #fdffcd;
+}
+
+.third-color {
+    background: #ffebbb;
+}
+
+.fourth-color {
+    background: #ffcab0;
+}
+
+body {
+    background-color: #6c6c6c;
+}
+
+.product-frame {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 25px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex: 0 0 calc(25% - 20px);
+    margin: 0 10px 20px 0;
+}
+
+.custom_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #dcecfb;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom_menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.custom_menu li:last-child {
+    margin-right: 0;
+}
+
+.custom_menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom_menu a:hover {
+    background-color: #e9ecef;
+}
+
+#cart .cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cart .total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+

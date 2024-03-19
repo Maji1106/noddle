@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Lugx Gaming - Shop Page</title>
+    <title>Shopping Cart Example</title>
+    <link rel="stylesheet" type="text/css" href="product.css"> 
+</head>
+<body>
+     
+    <div class="banner_bg_main">
+         <!-- header top section start -->
+         <div class="container">
+            <div class="header_section_top">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="custom_menu">
+                        <ul>
+                           <li><a href="#">Best Sellers</a></li>
+                        
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+    
+ 
+
+    <div id="products" class="product-container">
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/1.webp" alt="Product 1">
+            <h3>วุ้นเส้นแบนเย็นตาโฟแห้ง </h3>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="1" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(1)">Remove from Cart</button>
+
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/2.webp" alt="Product 2">
+            <h2>ก๋วยเตี๋ยวเป็ด </h2>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="2" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(2)">Remove from Cart</button>
+
+        </div>
+    </div>
+    <!-- เพิ่มสินค้าเพิ่มเติมตามต้องการ -->
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/3.webp" alt="Product 3">
+            <h2>ก๋วยเตี๋ยวหมูเด้ง</h2>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="3" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(3)">Remove from Cart</button>
+
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/4.jpg" alt="Product 4">
+            <h2>    ก๋วยเตี๋ยวลูกชิ้นน้ำใส</h2>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="4" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(4)">Remove from Cart</button>
+
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/ก๋วยเตี๋ยวหมู.jpg" alt="Product 5">
+            <h3>ก๋วยเตี๋ยวหมู</h3>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="5" data-price="45">Add to Cart</button><button onclick="removeItem(5)">Remove from Cart</button>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/ก๋วยเตี๋ยวเนื้อ.jpg" alt="Product 6">
+            <h2>ก๋วยเตี๋ยวเนื้อ</h2>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="6" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(6)">Remove from Cart</button>
+
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/ก๋วยเตี๋ยวเรือ.jpg" alt="Product 7">
+            <h2>ก๋วยเตี๋ยวเรือ</h2>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="7" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(7)">Remove from Cart</button>
+
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/บะหมี่, เกี๊ยว.jpg" alt="Product 8">
+            <h2>บะหมี่เกี๊ยว</h2>
+            <h3>45฿</h3>
+            <button class="button-86"  role="button"  data-product-id="8" data-price="45">Add to Cart</button>
+           <button onclick="removeItem(8)">Remove from Cart</button>
+
+        </div>
+    </div>
+     <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/ก๋วยเตี๋ยวปลา.jpg" alt="Product 9">
+            <h2>ก๋วยเตี๋ยวปลา</h2>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="9" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(9)">Remove from Cart</button>
+
+        </div>
+    </div>
+     <div class="product">
+        <div class="product-frame">
+            <img src="./รูป/ก๋วยเตี๋ยวหลอด.jpg" alt="ko">
+            <h2>ก๋วยเตี๋ยวหลอด</h2>
+            <h3>45฿</h3>
+            <button class="button-86" data-product-id="10" data-price="45">Add to Cart</button>
+            <button onclick="removeItem(10)">Remove from Cart</button>
+
+        </div>
+    </div>
+</div>
+
+
+        <!-- เพิ่มสินค้าเพิ่มเติมตามต้องการ -->
+    </div>
+
+    
+    <div id="cart">
+        <h2>Cart</h2>
+         <script src="cart.js"></script>
+        <p>No items in cart.</p>
+       
+
+       
+
+    </div>
+<button onclick="printCartToPDF()">Print Cart</button>
+
+
+
+  </body>
+</body>
+</html>
+
