@@ -36,7 +36,7 @@ function updateCartDisplay() {
   }
 }
 
-function printCart() {
+function printCartToPDF() {
   // Open a new window for printing
   const printWindow = window.open("", "_blank");
 
@@ -50,6 +50,7 @@ function printCart() {
   }
 
   // Add total price to print content
+  let totalPrice = calculateTotalPrice();
   printContent += `<p>ราคารวม: ฿${totalPrice}</p>`;
 
   // Write the content to the print window
@@ -61,6 +62,18 @@ function printCart() {
   // Close the print window after printing
   printWindow.close();
 }
+
+// Function to calculate total price
+function calculateTotalPrice() {
+  let totalPrice = 0;
+  for (const productId in cart) {
+    const item = cart[productId];
+    const itemTotalPrice = item.quantity * item.price;
+    totalPrice += itemTotalPrice;
+  }
+  return totalPrice;
+}
+
 // Function to remove an item from the cart
 function removeItem(productId) {
     if (cart[productId]) {
